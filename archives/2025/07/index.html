@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/en/">
+  <link rel="canonical" href="http://yoursite-url/archives/2025/07/">
   <title>
     
       Yoko&#39;s web
@@ -305,7 +305,7 @@
     <span>
       English
     </span>
-    <select id="lang-select" data-canonical="en/index.html">
+    <select id="lang-select" data-canonical="archives/2025/07/index.html">
       
       
       <option value="en"  selected >
@@ -382,9 +382,9 @@
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('/img/header_img/tag_bg.jpg'); */
+       /*page*/
+        background-image: var(--intro-header-background-image-url-page);
+        /* background-image: url('/img/header_img/archive_bg3.jpg'); */
       
     }
 
@@ -466,91 +466,75 @@
             ">
 
       <!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
+      <!-- 归档列表 -->
 
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
-  <!-- top end -->
-  
-
-  <a href="/en/雷达学习/">
-    <h2 class="post-title">
-      雷达原始数据格式与距离-多普勒处理分析
-    </h2>
-    <h3 class="post-subtitle">
       
-    </h3>
-    <div class="post-content-preview">
+
+      <!-- 归档列表 -->
       
-本文介绍了雷达原始数据的定义及其常见处理方式。雷达采集的原始数据通常是一维连续的采样序列，但为了后续进行目标检测和距离-速度分析，常通过重构将其整理为二维矩阵格式。本文以128×96的数据结构为例，说明了如何将其reshape为快时间（距离方向）与慢时间（多普勒方向）的二维数据。快时间采样用于反映回波信号的传播时间，进而推算目标距离；慢时间采样用于捕捉多次脉冲间的相位变化，实现对目标速度的......
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2025">
+          <span class="tag-text">2025</span>
+        </span>
+        <ul>
+          
+          <li>
+            07-06
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/en/雷达学习/" style="color: #0085a1">
+              <span>
+                雷达原始数据格式与距离-多普勒处理分析
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            07-06
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/雷达学习/" style="color: #0085a1">
+              <span>
+                雷达原始数据格式与距离-多普勒处理分析
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            07-06
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/en/频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响/" style="color: #0085a1">
+              <span>
+                频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            07-06
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响/" style="color: #0085a1">
+              <span>
+                频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
     </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Yoko on
-    2025-07-06
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#range-doppler fast-time slow-time target-detection" title="range-doppler fast-time slow-time target-detection">range-doppler fast-time slow-time target-detection</a>
-    
   </div>
-  
-
 </div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
-  <!-- top end -->
-  
-
-  <a href="/en/频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响/">
-    <h2 class="post-title">
-      频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      
-本文介绍了符号间干扰（ISI）和码间干扰（ICI）的产生原因及其在时域上的表现，阐明了循环前缀（CP）通过将符号尾部复制到前端实现等效循环卷积，从而有效抑制ISI的原理。针对ICI，文章指出其主要由子载波正交性破坏引起，循环前缀难以解决，需通过频域均衡、增加子载波间隔和改善同步技术等方法减轻影响。通过MATLAB仿真，文中展示了多径信道和带限信道对OFDM信号产生ISI和ICI的不同时域特......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Yoko on
-    2025-07-06
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#ICI ISI CP FDE" title="ICI ISI CP FDE">ICI ISI CP FDE</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
 
 
       <!-- 如果开启评论功能 -->
@@ -683,19 +667,19 @@
 <div class="widget">
   <ul>
     
-    <a href="../cn/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
+    <a href="../../../cn/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
       <li>雷达原始数据格式与距离-多普勒处理分析</li>
     </a>
     
-    <a href="%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
+    <a href="../../../en/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
       <li>雷达原始数据格式与距离-多普勒处理分析</li>
     </a>
     
-    <a href="../cn/%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
+    <a href="../../../cn/%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
       <li>频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响</li>
     </a>
     
-    <a href="%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
+    <a href="../../../en/%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
       <li>频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响</li>
     </a>
     
@@ -727,7 +711,7 @@
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2025/07/">July 2025</a><span class="archive-list-count">4</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="">July 2025</a><span class="archive-list-count">4</span></li></ul>
 </div>
 
 

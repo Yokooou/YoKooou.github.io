@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/en/">
+  <link rel="canonical" href="http://yoursite-url/cn/雷达学习/">
   <title>
     
-      Yoko&#39;s web
+      雷达原始数据格式与距离-多普勒处理分析 - Yoko&#39;s web
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -239,7 +239,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">HOME</a>
+            <a href="/">首页</a>
           </li>
 
           
@@ -247,7 +247,7 @@
           <li>
             <a href="/about/">
               
-              ABOUT
+              关于
               
               
             </a>
@@ -258,7 +258,7 @@
           <li>
             <a href="/archive/">
               
-              ARCHIVES
+              归档
               
               
             </a>
@@ -269,7 +269,7 @@
           <li>
             <a href="/categories/">
               
-              CATEGORIES
+              分类
               
               
             </a>
@@ -280,7 +280,7 @@
           <li>
             <a href="/tags/">
               
-              TAGS
+              标签
               
               
             </a>
@@ -291,11 +291,12 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜索</a>
           </li>
           
 
           <!-- LangSelect -->
+          
           
           
           <!-- LangSelect start -->
@@ -303,16 +304,16 @@
 <li>
   <a id="lang-select-label"><i class="fa fa-globe"></i>
     <span>
-      English
+      简体中文
     </span>
-    <select id="lang-select" data-canonical="en/index.html">
+    <select id="lang-select" data-canonical="cn/雷达学习/">
       
       
-      <option value="en"  selected >
+      <option value="en" >
         English
       </option>
       
-      <option value="cn" >
+      <option value="cn"  selected >
         简体中文
       </option>
       
@@ -321,6 +322,7 @@
 </li>
 
           <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -372,18 +374,18 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/img/header_img/archive_bg3.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/tag_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg3.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/tag_bg.jpg');
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
         /* background-image: url('/img/header_img/tag_bg.jpg'); */
       
     }
@@ -406,10 +408,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Tomorrow is another day</h1>
-            <!--<hr class="small">-->
-            <span class="subheading"></span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#range-doppler fast-time slow-time target-detection" title="range-doppler fast-time slow-time target-detection">range-doppler fast-time slow-time target-detection</a>
+              
+            </div>
+            <h1>雷达原始数据格式与距离-多普勒处理分析</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Yoko on
+              2025-07-06
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">3</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">926</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -450,311 +484,322 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-
-      <!-- Main Content -->
-
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
-  <!-- top end -->
-  
-
-  <a href="/en/雷达学习/">
-    <h2 class="post-title">
-      雷达原始数据格式与距离-多普勒处理分析
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      
-本文介绍了雷达原始数据的定义及其常见处理方式。雷达采集的原始数据通常是一维连续的采样序列，但为了后续进行目标检测和距离-速度分析，常通过重构将其整理为二维矩阵格式。本文以128×96的数据结构为例，说明了如何将其reshape为快时间（距离方向）与慢时间（多普勒方向）的二维数据。快时间采样用于反映回波信号的传播时间，进而推算目标距离；慢时间采样用于捕捉多次脉冲间的相位变化，实现对目标速度的......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Yoko on
-    2025-07-06
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#range-doppler fast-time slow-time target-detection" title="range-doppler fast-time slow-time target-detection">range-doppler fast-time slow-time target-detection</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
-  <!-- top end -->
-  
-
-  <a href="/en/频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响/">
-    <h2 class="post-title">
-      频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      
-本文介绍了符号间干扰（ISI）和码间干扰（ICI）的产生原因及其在时域上的表现，阐明了循环前缀（CP）通过将符号尾部复制到前端实现等效循环卷积，从而有效抑制ISI的原理。针对ICI，文章指出其主要由子载波正交性破坏引起，循环前缀难以解决，需通过频域均衡、增加子载波间隔和改善同步技术等方法减轻影响。通过MATLAB仿真，文中展示了多径信道和带限信道对OFDM信号产生ISI和ICI的不同时域特......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Yoko on
-    2025-07-06
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#ICI ISI CP FDE" title="ICI ISI CP FDE">ICI ISI CP FDE</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Visitors -->
-<h5><a href="/">VISITORS</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
-    
-        <!-- Featured Tags -->
-
-<section>
-  <h5><a href="/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#range-doppler fast-time slow-time target-detection" title="range-doppler fast-time slow-time target-detection" rel="2">range-doppler fast-time slow-time target-detection</a>
-    
-    
-    
-    <a href="/tags/#ICI ISI CP FDE" title="ICI ISI CP FDE" rel="2">ICI ISI CP FDE</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/roguerabbit.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Tomorrow is another day!</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/YoKooou">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://twitter.com/YoKooou">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.instagram.com/YoKooou">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/Yoko">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../cn/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
-      <li>雷达原始数据格式与距离-多普勒处理分析</li>
-    </a>
-    
-    <a href="%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/">
-      <li>雷达原始数据格式与距离-多普勒处理分析</li>
-    </a>
-    
-    <a href="../cn/%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
-      <li>频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响</li>
-    </a>
-    
-    <a href="%E9%A2%91%E5%9F%9F%E5%9D%87%E8%A1%A1%E8%A7%A3%E5%86%B3%E5%B8%A6%E5%AE%BD%E5%8F%97%E9%99%90%E5%AF%BC%E8%87%B4ICI%E4%B8%94%E5%BE%AA%E7%8E%AF%E5%89%8D%E7%BC%80%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%BE%84%E4%BF%A1%E9%81%93%E5%AF%B9ISI%E7%9A%84%E5%BD%B1%E5%93%8D/">
-      <li>频域均衡解决带宽受限导致ICI且循环前缀解决多径信道对ISI的影响</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://YoKooou.life/" target="_blank">YoKooou</a></li>
-  
-  <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-  
-  <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
+        <blockquote>
+<p>本文介绍了雷达原始数据的定义及其常见处理方式。雷达采集的原始数据通常是一维连续的采样序列，但为了后续进行目标检测和距离-速度分析，常通过重构将其整理为二维矩阵格式。本文以128×96的数据结构为例，说明了如何将其reshape为快时间（距离方向）与慢时间（多普勒方向）的二维数据。快时间采样用于反映回波信号的传播时间，进而推算目标距离；慢时间采样用于捕捉多次脉冲间的相位变化，实现对目标速度的估计。本文还阐述了二维FFT后形成的距离-多普勒图的物理意义，该图通过频率和时延的联合分析，展示了目标在不同距离和速度下的能量分布。</p>
+</blockquote>
+<h2 id="Repo">Repo</h2>
+<p>Github Repo: <a target="_blank" rel="noopener" href="https://github.com/Yokooou/YoKooou.github.io.git">https://github.com/Yokooou/YoKooou.github.io.git</a> or <a href="mailto:git@github.com">git@github.com</a>:Yokooou/YoKooou.github.io.git</p>
+<h1>雷达原始数据格式与距离-多普勒处理分析</h1>
+<h2 id="一、雷达原始数据定义及一般处理">一、雷达原始数据定义及一般处理</h2>
+<p><strong>理论上：</strong><br>
+在多通道（多天线）、多脉冲或多帧体制的雷达系统中，原始信号通常以一维形式采样（例如 ADC 输出的是一串连续的数据流）。</p>
+<p><strong>但实际上：</strong><br>
+为了适配后续的数据处理需求（如距离-多普勒变换、目标检测等），接收端或处理端通常会将这些一维数据<strong>重建为二维或三维格式</strong>，以匹配雷达的工作模式。</p>
+<p><strong>举例说明：</strong><br>
+假设你有一帧雷达数据，共有 128 × 96 个采样点：</p>
+<ul>
+<li><strong>128</strong> 表示快时间（Fast Time，对应距离）；</li>
+<li><strong>96</strong> 表示慢时间（Slow Time，对应多普勒/脉冲序列）；</li>
 </ul>
+<p>这些数据会被以一维数组 <code>[x₁, x₂, ..., x₁₂₂₈*96]</code> 的形式保存。此时，可以使用 <code>reshape([96, 128])</code> 的操作重构为 96 行、128 列的二维矩阵：</p>
+<ul>
+<li>每一<strong>行</strong>表示一个慢时间采样（即每个脉冲/帧）；</li>
+<li>每一<strong>列</strong>表示一个距离单元（距离bin）；</li>
+</ul>
+<p>这种结构非常适合进行二维 FFT 分析。</p>
+<hr>
+<h2 id="二、快时间采样与慢时间采样">二、快时间采样与慢时间采样</h2>
+<h3 id="1-快时间采样（Fast-Time-Sampling）">1. 快时间采样（Fast Time Sampling）</h3>
+<ul>
+<li>对应物理世界中的 <strong>距离</strong>；</li>
+<li>表征电磁波从雷达到目标、再反射回来的<strong>往返时间</strong>；</li>
+<li>通过传播速度（如光速）可换算出目标的实际距离。</li>
+</ul>
+<h3 id="2-慢时间采样（Slow-Time-Sampling）">2. 慢时间采样（Slow Time Sampling）</h3>
+<ul>
+<li>对应物理世界中的 <strong>速度（多普勒频移）</strong>；</li>
+<li>是在<strong>连续发射多个脉冲</strong>时，对同一距离单元位置的回波做采样；</li>
+<li>如果目标运动，回波相位会在不同脉冲之间产生规律性变化；</li>
+<li>通过慢时间方向做 FFT，可估计出目标的 <strong>径向速度</strong>。</li>
+</ul>
+<p><strong>实际应用：</strong><br>
+使用 8、16、32、64 或 128 次慢时间采样，能有效提升多普勒分辨率和抗噪声能力。</p>
+<hr>
+<h2 id="三、二维图含义：距离-多普勒图">三、二维图含义：距离-多普勒图</h2>
+<p>二维 FFT 后可得出 <strong>距离-多普勒图（Range-Doppler Map）</strong>：</p>
+<ul>
+<li><strong>横轴（快时间）</strong>：表示各个距离单元，反映目标距离；</li>
+<li><strong>纵轴（慢时间）</strong>：表示各个多普勒单元，反映目标速度；</li>
+</ul>
+<h3 id="物理含义：">物理含义：</h3>
+<p>这是一张反映 <strong>目标在“距离-速度”二维空间中能量分布</strong> 的图：</p>
+<ul>
+<li>静止目标 → 多普勒为 0 的行上；</li>
+<li>移动目标 → 多普勒偏移行上；</li>
+</ul>
+<p>虽然它不能直接还原目标外形，但它揭示了目标的动态特征（距离、速度、强度）信息，是雷达感知的核心输出之一。</p>
+<h3 id="View-MY-Blog-➾"><a target="_blank" rel="noopener" href="https://Yokooou.github.io">View MY Blog ➾</a></h3>
+<p><img src="roguerabbit.jpg" alt="roguerabbit"></p>
+<p>Please <a target="_blank" rel="noopener" href="https://github.com/Yokooou/YoKooou.github.io">Star</a> this Project if you like it! <a target="_blank" rel="noopener" href="https://github.com/Yokooou">Follow</a> would also be appreciated! Peace!</p>
 
 
         <hr>
-    
-        <!-- Archives -->
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/en/雷达学习/" data-toggle="tooltip" data-placement="top" title="雷达原始数据格式与距离-多普勒处理分析">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2025/07/">July 2025</a><span class="archive-list-count">4</span></li></ul>
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
 </div>
+<!-- tip end -->
 
+        <!-- tip end -->
+        
 
-        <hr>
-    
-        <!-- Categories -->
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
 
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Wireless Communication">
-      <li>Wireless Communication</li>
-    </a>
-    
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=雷达原始数据格式与距离-多普勒处理分析&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/雷达学习/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
 
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
+        <!-- Sharing End -->
+        
         <hr>
-    
-</div>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Sun Jul 06 2025 19:44:17 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
 
 
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
     
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Repo"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Repo</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number"></span> <span class="toc-nav-text">雷达原始数据格式与距离-多普勒处理分析</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%80%E3%80%81%E9%9B%B7%E8%BE%BE%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E5%8F%8A%E4%B8%80%E8%88%AC%E5%A4%84%E7%90%86"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、雷达原始数据定义及一般处理</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BA%8C%E3%80%81%E5%BF%AB%E6%97%B6%E9%97%B4%E9%87%87%E6%A0%B7%E4%B8%8E%E6%85%A2%E6%97%B6%E9%97%B4%E9%87%87%E6%A0%B7"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、快时间采样与慢时间采样</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-%E5%BF%AB%E6%97%B6%E9%97%B4%E9%87%87%E6%A0%B7%EF%BC%88Fast-Time-Sampling%EF%BC%89"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">1. 快时间采样（Fast Time Sampling）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-%E6%85%A2%E6%97%B6%E9%97%B4%E9%87%87%E6%A0%B7%EF%BC%88Slow-Time-Sampling%EF%BC%89"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">2. 慢时间采样（Slow Time Sampling）</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%89%E3%80%81%E4%BA%8C%E7%BB%B4%E5%9B%BE%E5%90%AB%E4%B9%89%EF%BC%9A%E8%B7%9D%E7%A6%BB-%E5%A4%9A%E6%99%AE%E5%8B%92%E5%9B%BE"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、二维图含义：距离-多普勒图</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%A9%E7%90%86%E5%90%AB%E4%B9%89%EF%BC%9A"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">物理含义：</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#View-MY-Blog-%E2%9E%BE"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">View MY Blog ➾</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#range-doppler fast-time slow-time target-detection" title="range-doppler fast-time slow-time target-detection">range-doppler fast-time slow-time target-detection</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://YoKooou.life/" target="_blank">YoKooou</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -946,7 +991,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
