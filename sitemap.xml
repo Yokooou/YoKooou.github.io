@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite-url/cn/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://yoursite-url/en/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2025-07-06</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/en/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://yoursite-url/cn/%E9%9B%B7%E8%BE%BE%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2025-07-06</lastmod>
     
@@ -83,14 +83,14 @@
 
   
   <url>
-    <loc>http://yoursite-url/tags/range-doppler-fast-time-slow-time-target-detection/</loc>
+    <loc>http://yoursite-url/tags/ICI-ISI-CP-FDE/</loc>
     <lastmod>2025-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/ICI-ISI-CP-FDE/</loc>
+    <loc>http://yoursite-url/tags/range-doppler-fast-time-slow-time-target-detection/</loc>
     <lastmod>2025-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
